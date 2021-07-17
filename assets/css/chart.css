@@ -1,0 +1,319 @@
+/* timeworth section and its chart*/
+
+.timeworth {
+	margin-top:140px;
+	padding: 110px 0;
+	background-color:#eee;
+
+}
+.timeworth .chart-wrapper{
+    margin:0 10px;
+}
+.timeworth .chart-container{
+    max-width:500px;
+	position: relative;
+    margin:0 auto;
+}
+/* draw x-axis oin the bottom   */
+/* .timeworth .chart-container::before{
+    position: absolute;
+    content:'';
+    margin: 0;
+    width:100%;
+    height:5px;
+    background-color:#E0E0E0;
+    border-radius:5px;
+    bottom:0;
+} */
+
+/* .timeworth .chart-container::after{
+    position: absolute;
+    content:'';
+    margin: 0;
+    width:100%;
+    height:5px;
+    
+    border-radius:5px;
+    bottom:0;
+	left:0;
+} */
+.timeworth .chart-container img {
+	margin:100px 0 30px 0;
+	/* overflow: hidden; */
+    position: relative;
+	max-width:100%;
+    padding:0;	
+}
+
+.timeworth .milestone-wrap h5{
+	padding:0;
+	margin-bottom:10px;
+	color:#4d88ff;
+}
+.timeworth .milestone-wrap{
+	position:absolute;
+	background-color:#fff;
+	text-align:center;
+	width:150px;
+	padding:10px;
+	border-radius:10px;
+	left:-18px;
+	bottom:115px;
+	z-index:9;
+}
+
+.timeworth .milestone-wrap p{
+	font-size:10px;
+	line-height:1.5em;
+}
+
+.timeworth .chart-container .circle{
+	position: absolute;
+	width:10px;
+	height:10px;	
+	background-color:#fff;
+	border:2px solid #4d88ff;
+	border-radius:50%;	
+	cursor: pointer;
+    z-index:9;
+}
+
+.timeworth .chart-container .circle.curve-circle-one{
+	bottom:30px;
+	left:50px;
+
+}
+
+.timeworth .chart-container div.circle.curve-circle-two{
+	bottom:18.5%;
+	left:40%;
+
+}
+
+
+.timeworth .chart-container div.circle.curve-circle-three{
+	
+	bottom:32%;
+	right:30%;
+}
+
+.timeworth .chart-container div.circle.curve-circle-four{
+	bottom:53%;
+	right:5%;
+	
+}
+
+/* draw inital X-axis */
+.timeworth .chart-container .x-bar{
+    position: absolute;
+    content:'';
+    margin: 0;
+    width:100%;
+    height:5px;
+    background-color:#E0E0E0;
+    border-radius:5px;
+    bottom:0;
+}
+
+/* milestone circle' color change to blue on hover */
+.timeworth .circle.curve-circle-one.active{
+	background-color:#4d88ff;
+}
+
+.timeworth .circle.curve-circle-two.active{
+	background-color:#4d88ff;
+}
+.timeworth .circle.curve-circle-three.active{
+	background-color:#4d88ff;
+}
+.timeworth .circle.curve-circle-four.active{
+	background-color:#4d88ff;
+}
+
+/* End */
+
+
+.timeworth .circle.curve-circle-one.active + .curve-circle-two + .curve-circle-three+.curve-circle-four+ .milestone-wrap + img + .bar-circle-one +  .bar-circle-two + .bar-circle-three + .bar-circle-four +.x-bar::after{
+	content:'';
+	position: absolute;
+	transition: all .5s linear;	
+	width:55px;
+	height:5px;
+	background-color:#4d88ff;
+	border-radius:5px;
+}
+
+.timeworth .curve-circle-two.active + .curve-circle-three+.curve-circle-four+ .milestone-wrap + img + .bar-circle-one +  .bar-circle-two + .bar-circle-three + .bar-circle-four +.x-bar::after{
+	content:'';
+	position: absolute;
+	transition: all .5s linear;
+	width:41%;
+	height:5px;
+	background-color:#4d88ff;
+	border-radius:5px;
+}
+
+.timeworth .curve-circle-three.active +.curve-circle-four+ .milestone-wrap + img + .bar-circle-one +  .bar-circle-two + .bar-circle-three + .bar-circle-four +.x-bar::after{
+
+	content:'';
+	position: absolute;
+	transition: all .5s linear;
+	width:70%;
+	height:5px;
+	background-color:#4d88ff;
+	border-radius:5px;
+}
+
+.timeworth .curve-circle-four.active + .milestone-wrap + img + .bar-circle-one +  .bar-circle-two + .bar-circle-three + .bar-circle-four +.x-bar::after{
+
+	content:'';
+	position: absolute;
+	transition: all .5s linear;
+	width:95%;
+	height:5px;
+	background-color:#4d88ff;
+	border-radius:5px;
+}
+
+
+
+
+.timeworth .circle.curve-circle-one.active +.curve-circle-two+.curve-circle-three+.curve-circle-four+ .milestone-wrap + img + .bar-circle-one{
+	bottom:-2.5px;
+	background-color:#4d88ff;
+	transition: transform .5s linear;	
+	transform:translateX(45px);
+}
+
+.timeworth1 .circle.curve-circle-two.active +.curve-circle-three+.curve-circle-four+ .milestone-wrap + img + .bar-circle-one{
+	bottom:-2.5px;
+	background-color:#4d88ff;
+	transition: transform .5s linear;	
+	transform:translateX(185px);
+}
+.timeworth1 .circle.curve-circle-three.active + .curve-circle-four+ .milestone-wrap + img + .bar-circle-one{
+	bottom:-2.5px;
+	background-color:#4d88ff;
+	transition: transform .5s linear;	
+	transform:translateX(335px);
+}
+.timeworth1 .circle.curve-circle-four.active + .milestone-wrap + img + .bar-circle-one{
+	bottom:-2.5px;
+	background-color:#4d88ff;
+	transition: transform .5s linear;	
+	transform:translateX(495px);
+}
+
+.timeworth1 .circle.curve-circle-one.active +.curve-circle-two+.curve-circle-three+.curve-circle-four+ .milestone-wrap{
+	transition: transform .5s linear;	
+	transform:translateX(0px);	
+}
+
+.timeworth1 .circle.curve-circle-two.active +.curve-circle-three+.curve-circle-four+ .milestone-wrap{
+	transition: transform .5s linear;
+	transform:translate(145px,-20px);	
+}
+
+.timeworth1 .circle.curve-circle-three.active +.curve-circle-four+ .milestone-wrap{
+	transition: transform .5s linear;
+	transform:translate(290px,-60px);	
+}
+.timeworth1 .circle.curve-circle-four.active + .milestone-wrap{
+	transition: transform .5s linear;
+	transform:translate(440px,-130px);
+}
+/* end of timeworh */
+
+
+@media screen and (max-width: 549px) {
+
+	.timeworth1 .chart-container1 div.circle1.curve-circle-two1{
+		bottom:18.5%;
+		left:40%;
+	
+	}
+	
+	
+	.timeworth1 .chart-container1 div.circle1.curve-circle-three1{
+		
+		bottom:32%;
+		right:30%;
+	}
+
+	.timeworth1 .chart-container1 div.circle1.curve-circle-four1{
+		bottom:51%;
+        right:6%;
+		
+	}
+
+} 
+
+@media screen and (max-width: 499px) {
+
+	
+	
+	.timeworth1 .chart-container1 div.circle1.curve-circle-four1{
+		bottom:49%;
+        right:6%;
+		
+	}
+
+}
+
+@media screen and (max-width: 449px) {
+
+	
+	
+
+	.timeworth1 .chart-container1 div.circle1.curve-circle-three1{
+		
+		bottom:33.5%;
+		right:25%;
+	}
+
+	.timeworth1 .chart-container1 div.circle1.curve-circle-four1{
+		bottom:47.5%;
+        right:6%;
+		
+	}
+
+} 
+
+
+@media screen and (max-width: 399px) {
+
+
+	.timeworth .chart-container div.circle.curve-circle-two{
+		bottom:20%;
+		left:43%;
+	
+	}
+	
+	.timeworth .chart-container div.circle.curve-circle-three{
+		
+		bottom:31%;
+		right:25%;
+	}
+
+	.timeworth .chart-container div.circle.curve-circle-four{
+		bottom:46%;
+        right:5%;
+		
+	}
+
+} 
+
+
+@media screen and (max-width: 349px) {
+
+	/* .timeworth .chart-container div.circle.curve-circle-one{
+		bottom:14%;
+        left:10%;
+	} */
+
+	.timeworth .chart-container div.circle.curve-circle-four{
+		bottom:44%;
+        right:5%;
+	}
+
+} 

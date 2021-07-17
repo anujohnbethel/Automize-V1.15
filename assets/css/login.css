@@ -1,0 +1,111 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    color: #4d88ff;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+.container-rememberme {
+    
+}
+
+    label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4d88ff;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;    
+    cursor: pointer;
+    float: right;
+}
+
+    input[type=submit]:hover {
+        background-color: #fff;
+        color: #4d88ff;
+    }
+
+
+.log-container {
+    margin: 50px auto 50px auto;   
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px 50px;
+    max-width: 450px;
+    
+}
+
+.log-sub-container{
+    margin:0;    
+}
+
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+.col-left {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.col-right {
+    float: right;
+    width: 25%;
+    margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .col-left, .col-right {
+        padding-top: 10px 0 0 0;
+        margin: 0;
+        width: 100%;        
+    }
+        .col-25, .col-75, .col-left, .col-right, input[type=submit] {
+            width: 100%;
+            margin: 0;
+        }
+    
+}
