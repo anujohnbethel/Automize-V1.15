@@ -369,17 +369,22 @@ ul.navbar-nav{
 }
 .navbar .navbar-toggler-icon {
 	background-image: none;
+	display:flex;
+	justify-content:center;
+	align-items:center;
 }
 .navbar .navbar-toggler {
-	border-color: #fff;
-	background-color: #fff;	
+	border-color: none;
+	background-color: transparent;
 	height: 36px;
 	outline: none;
 	border-radius: 0px;
 	position: absolute;
 	right: 30px;
 	top: 20px;
+
 }
+
 .navbar .navbar-toggler-icon:after {
 	content: '\f0c9';
 	color: #4d88ff;
@@ -1550,6 +1555,7 @@ footer p {
 
 footer ul.social-icons {
 	margin-top: 25px;
+	display:none;
 }
 
 footer ul.social-icons li {
